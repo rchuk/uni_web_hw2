@@ -176,11 +176,11 @@ button:disabled {
 	flex-grow: 1;
 }
 
-.products-sub-block > section {
+.products-sub-block > div {
 	padding: 10px;
 }
 
-.products-sub-block-vert-narrow > section {
+.products-sub-block-vert-narrow > div {
 	padding: 5px 10px;
 }
 
