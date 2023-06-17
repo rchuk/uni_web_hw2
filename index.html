@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping cart</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<article class="main_article">
+		<section class="products-select-block">
+			<section class="products-sub-block">
+				<section class="product-search">
+					<input type="text" placeholder="Назва товару">
+					<button class="has-tooltip" data-tooltip="Додати товар">Додати</button>
+				</section>
+			</section>
+			<hr>
+			<section class="products-sub-block-vert-narrow">
+				<section class="product-select">
+					<section class="flex-start">
+						<p class="bought">Помідори</p>
+					</section>
+					<section class="flex-center">
+						<button class="minus-button has-tooltip hidden" data-tooltip="Видалити одиницю продукту">-</button>
+						<span class="product-select-amount">2</span>
+						<button class="plus-button has-tooltip hidden" data-tooltip="Додати одиницю продукту">+</button>
+					</section>
+					<section class="flex-end">
+						<button class="buy-button has-tooltip" data-tooltip="Продукт не було куплено">Не куплено</button>
+						<button class="remove-button has-tooltip not-displayed" data-tooltip="Видалити продукт">⨯</button>
+					</section>
+				</section>
+				<hr>
+				<section class="product-select">
+					<section class="flex-start">
+						<p>Печиво</p>
+					</section>
+					<section class="flex-center">
+						<button class="minus-button has-tooltip" data-tooltip="Видалити одиницю продукту">-</button>
+						<span class="product-select-amount">2</span>
+						<button class="plus-button has-tooltip" data-tooltip="Додати одиницю продукту">+</button>
+					</section>
+					<section class="flex-end">
+						<button class="buy-button has-tooltip" data-tooltip="Продукт було куплено">Куплено</button>
+						<button class="remove-button has-tooltip" data-tooltip="Видалити продукт">⨯</button>
+					</section>
+				</section>
+				<hr>
+				<section class="product-select">
+					<section class="flex-start">
+						<p>
+							<input class="product-name-input" type="text" readonly="true" value="Сир">
+						</p>
+					</section>
+				<section class="flex-center">
+					<button disabled class="minus-button has-tooltip" data-tooltip="[Неактивно] Видалити одиницю продукту">-</button>
+					<span class="product-select-amount">1</span>
+					<button class="plus-button has-tooltip" data-tooltip="Додати одиницю продукту">+</button>
+				</section>
+				<section class="flex-end">
+					<button class="buy-button has-tooltip" data-tooltip="Продукт було куплено">Куплено</button>
+					<button class="remove-button has-tooltip" data-tooltip="Видалити продукт">⨯</button>
+				</section>
+			</section>
+		</section>
+	</section>
+	<section class="products-stats-block">
+		<section class="products-sub-block">
+			<section class="products-stats-block-header">
+				<h3>Залишилося</h3>
+			</section>
+			<hr>
+			<section class="products-stats-list">
+				<span class="product-stats">
+					Печиво
+					<span class="product-stats-amount">4</span>
+				</span>
+				<span class="product-stats">
+					Сир
+					<span class="product-stats-amount">4</span>
+				</span>
+			</section>
+		</section>
+		<hr>
+		<section class="products-sub-block">
+			<section class="products-stats-block-header">
+				<h3>Куплено</h3>
+			</section>
+			<hr>
+			<section class="products-stats-list">
+				<span class="product-stats bought">
+					Помідори
+					<span class="product-stats-amount">4</span>
+				</span>
+			</section>
+		</section>
+	</article>
+	<section class="badge">
+    <h2>Buy List</h2>
+    <h6>Created by:</h6>
+    <h4>Omelchuk Ruslan</h4>
+  </section>
+  <script src="buy_list.js"></script>
+</body>
+</html>
